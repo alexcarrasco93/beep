@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
+import { IonicPage } from 'ionic-angular';
 import { LoginResponse } from '../../models/login/login-response.interface';
 import { ToastProvider } from '../../providers/toast/toast';
 
@@ -11,7 +11,6 @@ import { ToastProvider } from '../../providers/toast/toast';
 export class RegisterPage {
 
   constructor(
-    private navCtrl: NavController,
     private toastProvider: ToastProvider
   ) {}
 

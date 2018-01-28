@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { AngularFireDatabase, AngularFireObject } from 'angularfire2/database';
 import { User } from 'firebase/app';
-import 'rxjs/add/operator/take';
 
 import { Profile } from '../../models/profile/profile.interface';
 

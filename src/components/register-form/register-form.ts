@@ -1,5 +1,4 @@
 import { Component, Output, EventEmitter } from '@angular/core';
-import { AngularFireAuth } from 'angularfire2/auth';
 import { Account } from '../../models/account/account.interface';
 import { AuthProvider } from '../../providers/auth/auth';
 import { LoginResponse } from '../../models/login/login-response.interface';
