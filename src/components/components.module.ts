@@ -4,12 +4,16 @@ import { IonicModule } from 'ionic-angular/module';
 import { RegisterFormComponent } from './register-form/register-form';
 import { ToastProvider } from '../providers/toast/toast';
 import { EditProfileFormComponent } from './edit-profile-form/edit-profile-form';
+import { ProfileViewComponent } from './profile-view/profile-view';
+import { ProfileSearchComponent } from './profile-search/profile-search';
 
 @NgModule({
 	declarations: [
 		LoginFormComponent,
 		RegisterFormComponent,
-    EditProfileFormComponent
+    EditProfileFormComponent,
+    ProfileViewComponent,
+    ProfileSearchComponent
 	],
 	imports: [
 		IonicModule
@@ -17,7 +21,9 @@ import { EditProfileFormComponent } from './edit-profile-form/edit-profile-form'
 	exports: [
 		LoginFormComponent,
 		RegisterFormComponent,
-    EditProfileFormComponent
+    EditProfileFormComponent,
+    ProfileViewComponent,
+    ProfileSearchComponent
 	],
 	providers: [
 		ToastProvider

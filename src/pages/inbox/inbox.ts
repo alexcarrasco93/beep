@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage } from 'ionic-angular';
+import { IonicPage, NavController } from 'ionic-angular';
 import { MESSAGE_LIST } from '../../mocks/messages/messages';
 import { Message } from '../../models/messages/message.interface';
 
@@ -18,5 +18,13 @@ import { Message } from '../../models/messages/message.interface';
 export class InboxPage {
 
   messageList: Message[] = MESSAGE_LIST;
+
+  constructor(
+    private navCtrl: NavController
+  ) {}
+
+  navigateToSearchUserPage() {
+    this.navCtrl.push('SearchUserPage');
+  }
 
 }
